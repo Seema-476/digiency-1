@@ -20,6 +20,14 @@
 }
 
 @media(min-width:576px) {
+    .footertext {
+        --fs-sm: 16px;
+    }
+
+    .locationtext {
+        --fs-md: 20px;
+    }
+
     .top {
         --fs-md: 20px;
     }
