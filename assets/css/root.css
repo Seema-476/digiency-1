@@ -1,0 +1,68 @@
+:root {
+    /* font-size  */
+    --fs-xsm: 10px;
+    --fs-sm: 13px;
+    --fs-md: 16px;
+    --fs-mmd: 20px;
+    --fs-lg: 25px;
+    --fs-llg: 39px;
+    --fs-xl: 49px;
+    --fs-xxl: 64px;
+
+
+    /* font-color */
+    --fc-white: #ffffff;
+    --fc-black: #373737;
+    --fc-orange: #ff5300;
+    --fc-light-orange: #fff7f4;
+    --fc-gray: #7b7b7b;
+    --fc-primary-gray: #efefef;
+}
+
+@media(min-width:576px) {
+    .top {
+        --fs-md: 20px;
+    }
+
+    .number {
+        --fs-lg: 39px;
+    }
+
+    .heading {
+        --fs-lg: 34px;
+    }
+
+    .subheading {
+        --fs-sm: 16px;
+    }
+
+    .lorem {
+        --fs-sm: 16px;
+    }
+
+    .design {
+        --fs-mmd: 25px;
+    }
+
+    .heading-2 {
+        --fs-lg: 39px;
+    }
+
+    .blogheading {
+        --fs-md: 20px;
+    }
+
+    .blogtext {
+        --fs-sm: 16px;
+    }
+
+    .btnmore {
+        --fs-md: 20px;
+    }
+}
+
+@media(min-width:768px) {
+    .heading {
+        --fs-lg: 49px;
+    }
+}
