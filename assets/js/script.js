@@ -3,22 +3,20 @@ const menulist = document.querySelector(".menulist")
 menuicon.addEventListener("click", function () {
     menulist.classList.toggle("show");
     document.body.classList.toggle("overflowhidden")
+})  
+const topBtn = document.querySelector(".topBtn");
+const show = document.querySelector(".show");
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 60) {
+        topBtn.classList.add("show");
+    } else {
+        topBtn.classList.remove("show");
+    }
 })
-const mybutton = document.querySelector(".elip");
-window.onscroll = function () { scrollFunction() };
-function scrollFunction() {
-    if (document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-    }
-    else {
-        mybutton.style.display = "none";
-    }
-}
-function tap() {
-    document.body.scrollTop = 0;
+topBtn.addEventListener("click", function () {
     document.documentElement.scrollTop = 0;
-}
+})
 
 $('.responsive').slick({
     dots: false,
