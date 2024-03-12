@@ -20,6 +20,9 @@
 }
 
 @media(min-width:576px) {
+    .webtemplate{
+        --fs-mmd: 25px;
+    }
     .phillip {
         --fs-sm: 19px;
     }

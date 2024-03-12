@@ -289,13 +289,13 @@
 
 .casestudynav {
     padding-top: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 45px;
 }
 
 .webtemplate {
     color: var(--fc-white);
     font-family: 'Poppins', sans-serif;
-    font-size: var(--fs-lg);
+    font-size: var(--fs-mmd);
     font-weight: 600;
     line-height: 38px;
     white-space: nowrap;
@@ -304,13 +304,13 @@
 
 .templatebox {
     background: #FF5300BF;
-    padding: 64px 35px 64px 45px;
+    padding: 32px 18px 32px 18px;
+    max-width: 266px;
 }
 
 .templateabsolute {
     position: absolute;
-    right: -100%;
-    transition: all 300ms linear;
+    display: none;
 }
 
 .cursor-pointer {
@@ -318,7 +318,10 @@
 }
 
 .cardimage:hover .templateabsolute {
-    right: 15%;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* =============================================================slider============================================ */
@@ -769,6 +772,9 @@
 }
 
 @media(min-width:576px) {
+    .templatebox {
+            padding: 64px 35px 64px 45px;
+        }
     .boxshadow {
         padding: 25px;
     }
