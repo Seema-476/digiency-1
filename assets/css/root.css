@@ -20,6 +20,9 @@
 }
 
 @media(min-width:576px) {
+    .stay{
+        --fs-mmd: 39px;
+    }
     .webtemplate{
         --fs-mmd: 25px;
     }
