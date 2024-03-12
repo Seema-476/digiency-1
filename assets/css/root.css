@@ -13,7 +13,9 @@
     /* font-color */
     --fc-white: #ffffff;
     --fc-black: #373737;
+    --fc-primary-black: #0000001A;
     --fc-orange: #ff5300;
+    --fc-primary-orange: #FF5300BF;
     --fc-light-orange: #fff7f4;
     --fc-gray: #7b7b7b;
     --fc-primary-gray: #efefef;

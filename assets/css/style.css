@@ -303,7 +303,7 @@
 }
 
 .templatebox {
-    background: #FF5300BF;
+    background: var(--fc-primary-orange);
     padding: 32px 18px 32px 18px;
     max-width: 266px;
 }
@@ -357,7 +357,7 @@
 }
 
 .boxshadow {
-    box-shadow: 0px 1px 4px 0px #0000001A;
+    box-shadow: 0px 1px 4px 0px var(--fc-primary-black);
     padding: 17px;
     border-radius: 10px;
     background: var(--fc-white) !important;
@@ -373,6 +373,10 @@
 
 .slick-dots li button:before {
     font-size: 10px !important;
+}
+
+.slick-dots li button:hover:before {
+    color: var(--fc-gray) !important;
 }
 
 .slick-track {
@@ -446,9 +450,14 @@
 .percentagebox {
     max-width: 125px;
     min-height: 108px;
-    box-shadow: 0px 1px 4px 0px #0000001A;
+    box-shadow: 0px 1px 4px 0px var(--fc-primary-black);
     padding: 11px 20px;
     border-radius: 5px;
+    transition: 1s;
+}
+
+.percentagebox:hover {
+    box-shadow: 1px 3px 7px 4px var(--fc-primary-black);
 }
 
 .pt40 {
@@ -611,7 +620,7 @@
     font-size: var(--fs-mmd);
     font-weight: 500;
     line-height: 30px;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 5px;
     padding: 15px 33px 15px 39px;
     background-color: var(--fc-orange);
@@ -620,6 +629,13 @@
     margin-bottom: 5px;
     margin-right: 5px;
     margin-left: 25px;
+    transition: 1s;
+}
+
+.btnsubscribe:hover {
+    border: 1px solid var(--fc-orange);
+    color: var(--fc-orange);
+    background-color: var(--fc-white);
 }
 
 /* ==========================================footer===================================================== */
@@ -712,6 +728,17 @@
 
 .iconbg:hover svg path {
     fill: var(--fc-orange);
+}
+
+.elip {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: var(--fc-orange);
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 30px;
 }
 
 @media(max-width:1199.98px) {
