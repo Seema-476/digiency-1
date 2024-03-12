@@ -150,6 +150,11 @@
     margin-left: -48px;
 }
 
+.headpy {
+    padding-top: 8px;
+    padding-bottom: 30px;
+}
+
 .heading-2 {
     color: var(--fc-black);
     font-family: 'Poppins', sans-serif;
@@ -273,6 +278,11 @@
     border-radius: 10px;
 }
 
+.py15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .no-scrollbar::-webkit-scrollbar {
     display: none;
 }
@@ -312,21 +322,25 @@
 }
 
 /* =============================================================slider============================================ */
+.sliderpy {
+    padding-top: 15px;
+    padding-bottom: 60px;
+}
+
 .slidertext {
     color: var(--fc-gray);
     font-family: 'Poppins', sans-serif;
-    font-size: var(--fs-md);
+    font-size: var(--fs-sm);
     font-weight: 400;
     line-height: 24px;
     padding-top: 10px;
     padding-bottom: 25px;
-    max-width: 320px;
 }
 
 .phillip {
     color: var(--fc-orange);
     font-family: 'Poppins', sans-serif;
-    font-size: var(--fs-mmd);
+    font-size: var(--fs-sm);
     font-weight: 500;
     line-height: 30px;
 }
@@ -334,14 +348,14 @@
 .ceo {
     color: var(--fc-gray);
     font-family: 'Poppins', sans-serif;
-    font-size: var(--fs-mmd);
+    font-size: var(--fs-sm);
     font-weight: 300;
     line-height: 19px;
 }
 
 .boxshadow {
     box-shadow: 0px 1px 4px 0px #0000001A;
-    padding: 25px;
+    padding: 17px;
     border-radius: 10px;
     background: var(--fc-white) !important;
 }
@@ -350,9 +364,18 @@
     background-color: var(--fc-light-orange);
 }
 
+.slick-dots li.slick-active button:before {
+    color: var(--fc-orange) !important;
+}
+
+.slick-dots li button:before {
+    font-size: 10px !important;
+}
+
 .slick-track {
-    gap: 13px !important;
+    gap: 15px !important;
     display: flex;
+    margin-bottom: 50px !important;
 }
 
 .slick-dots {
@@ -373,6 +396,14 @@
     border: 1px solid var(--fc-black);
 }
 
+.btnnext:hover {
+    border: 1px solid var(--fc-orange);
+}
+
+.btnprev:hover {
+    border: 1px solid var(--fc-orange);
+}
+
 .prevabsolute {
     position: absolute;
     top: 117px;
@@ -383,6 +414,14 @@
     position: absolute;
     top: 117px;
     right: -50px;
+}
+
+.btnprev:hover svg path {
+    fill: var(--fc-orange);
+}
+
+.btnnext:hover svg path {
+    fill: var(--fc-orange);
 }
 
 .percentage {
@@ -730,6 +769,14 @@
 }
 
 @media(min-width:576px) {
+    .boxshadow {
+        padding: 25px;
+    }
+
+    .slick-track {
+        gap: 30px !important;
+    }
+
     .py {
         padding-top: 120px;
     }

@@ -20,6 +20,14 @@
 }
 
 @media(min-width:576px) {
+    .phillip {
+        --fs-sm: 19px;
+    }
+
+    .slidertext {
+        --fs-sm: 16px;
+    }
+
     .footertext {
         --fs-sm: 16px;
     }
@@ -72,5 +80,11 @@
 @media(min-width:768px) {
     .heading {
         --fs-lg: 49px;
+    }
+}
+
+@media(min-width:992px) {
+    .phillip {
+        --fs-sm: 20px;
     }
 }
