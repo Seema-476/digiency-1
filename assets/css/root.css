@@ -22,12 +22,14 @@
 }
 
 @media(min-width:576px) {
-    .stay{
+    .stay {
         --fs-mmd: 39px;
     }
-    .webtemplate{
+
+    .webtemplate {
         --fs-mmd: 25px;
     }
+
     .phillip {
         --fs-sm: 19px;
     }
@@ -89,10 +91,19 @@
     .heading {
         --fs-lg: 49px;
     }
+                .blogheading {
+                    --fs-md: 16px;
+                }
 }
 
 @media(min-width:992px) {
     .phillip {
         --fs-sm: 20px;
+    }
+}
+
+@media(min-width:1200px) {
+    .blogheading {
+        --fs-md: 20px;
     }
 }

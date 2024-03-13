@@ -3,7 +3,7 @@ const menulist = document.querySelector(".menulist")
 menuicon.addEventListener("click", function () {
     menulist.classList.toggle("show");
     document.body.classList.toggle("overflowhidden")
-})  
+})
 const topBtn = document.querySelector(".topBtn");
 const show = document.querySelector(".show");
 
@@ -22,7 +22,7 @@ $('.responsive').slick({
     dots: false,
     infinite: true,
     speed: 300,
-    // autoplay: true,
+    autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: ".btnnext",
